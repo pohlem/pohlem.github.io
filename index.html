@@ -2,11 +2,45 @@
 <html>
 <body>
 	<h1>CV Num&eacuterique</h1>
-	<button type="button">Pr&eacutesentation</button>
-	<button type="button">Comp&eacutetences</button>
-	<button type="button">Formation</button>
-	<button type="button">Exp&eacuteriences professionnelles</button>
-	<button type="button">Contact</button>
+	<!-- This part represents the different buttons of the CV -->
+	<button type="button" onclick="hideOrShow('div1')">Pr&eacutesentation</button>
+	<button type="button" onclick="hideOrShow('div2')">Comp&eacutetences</button>
+	<button type="button" onclick="hideOrShow('div3')">Formation</button>
+	<button type="button" onclick="hideOrShow('div4')">Exp&eacuteriences professionnelles</button>
+	<button type="button" onclick="hideOrShow('div5')">Contact</button>
+	<!-- This part represents the different menus of the CV 
+		Part 1 : Presentation-->
+	<div id="div1">
+	Partie 1
+	</div>
+	<!-- Part 2 : Skills-->
+	<div id="div2">
+	Partie 2
+	</div>
+	<!-- Part 3 : Formation-->
+	<div id="div3">
+	Partie 3
+	</div>
+	<!-- Part 4 : Professional Experiences-->
+	<div id="div4">
+	Partie 4
+	</div>
+	<!-- Part 5 : Contact-->
+	<div id="div5">
+	Partie 5
+	</div>
+	<!-- This script represents all the functions that i use in this CV-->
+	<script>
+	<!-- The function who hide or show the different parts of the CV-->
+	function hideOrShow(anID) {
+		var x = document.getElementById(anID);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+</script>
 	<p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
