@@ -5,6 +5,8 @@
 <head>
 	<h1>CV Numérique</h1>
 </head>
+<!-- This script represents the file with all the functions that i use in this CV-->
+<script src='functionsCV.js'></script>
 <!-- This part represents the different buttons of the CV -->
 <button type="button" onclick="showOneDiv('div1')">Présentation</button>
 <button type="button" onclick="showOneDiv('div2')">Compétences</button>
@@ -15,40 +17,89 @@
 	Part 1 : Presentation-->
 	<body>
 		<div class="my-menus" id="div1">
-			Partie 1
+			<h2>Présentation</h2>
+			Bonjour, je m'appelle Pohle Maxime. <br/>
+			<img id="logo" src="images/photo_cv.PNG" border="2">
 		</div>
 		<!-- Part 2 : Skills-->
 		<div class="my-menus" id="div2" style="display: none;">
-			Partie 2
+			<h2>Compétences</h2>
+			<table>
+				<tr>
+					<td>Java</td>
+					<td><progress value="100" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>SQL</td>
+					<td><progress value="90" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td><progress value="80" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>JavaScript</td>
+					<td><progress value="60" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>HTML</td>
+					<td><progress value="55" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>CSS</td>
+					<td><progress value="45" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>C#</td>
+					<td><progress value="30" max="100"></progress></td>
+				</tr>
+				<tr>
+					<td>C++</td>
+					<td><progress value="15" max="100"></progress></td>
+				</tr>
+			</table>
 		</div>
 		<!-- Part 3 : Formation-->
 		<div class="my-menus" id="div3" style="display: none;">
-			Partie 3
+			<h2>Formation</h2>
+			<table>
+				<tr>
+					<td>2016 - 2017 :</td>
+					<td>Licence Informatique à l'IUT Lille 1</td>
+				</tr>
+				<tr>
+					<td>2014 - 2016 :</td>
+					<td>DUT Informatique à l'IUT Lille 1</td>
+				</tr>
+				<tr>
+					<td>2014 :</td>
+					<td>Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</td>
+				</tr>
+			</table>
 		</div>
 		<!-- Part 4 : Professional Experiences-->
 		<div class="my-menus" id="div4" style="display: none;">
-			Partie 4
+			<h2>Expériences professionnelles</h2>
+			Stage à l'ISEC (Instituto Superior de Engenharia de Coimbra) avec comme projet d'implémenter un lexer et un parser dans Java<br/>
+			Life-Generator | Développement d'un logiciel générateur de noms, d'histoires et de portraits pour permettre d'incarner un personnage fictif.<br/>
+			Virtual War | Développement et test d'un jeu de plateau (jeu de strat&eacutegie) en respectant le cahier des charges.<br/>
+			Edurace | Développement d'un logiciel éducatif ayant pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base. (Mathématiques, Histoire...)
 		</div>
 		<!-- Part 5 : Contact-->
 		<div class="my-menus" id="div5" style="display: none;">
-			Partie 5
+			<h2>Contact</h2>
+			<table>
+				<tr>
+					<td>Téléphone</td>
+					<td><a href="tel:+33613242735">06.13.24.27.35</a> <br/></td>
+				</tr>
+				<tr>
+					<td>Adresse e-mail</td>
+					<td><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></td>
+				</tr>
+			</table>
 		</div>
 	</body>
-	<!-- This script represents all the functions that i use in this CV-->
-	<script>
-		<!-- The function who shows one part of the CV-->
-		function showOneDiv(anID) {
-			var myMenus = document.querySelectorAll('.my-menus'),
-			i = 0,
-			l = myMenus.length;
-
-			for (i; i < l; i++) {
-				myMenus[i].style.display = 'none';
-			}
-			var div = document.getElementById(anID);
-			div.style.display = "block";
-		}
-	</script>
 	<footer>
 		I'm hosted with GitHub Pages.<br/>
 		Site réalisé par Maxime Pohle.
