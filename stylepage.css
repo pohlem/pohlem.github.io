@@ -3,7 +3,7 @@ body{
 	background-color: #FCFAE1;
 	margin:0px;
 	font-family:Georgia, serif;
-	margin-top:2%;
+	margin-top:5%;
 	margin-bottom:250px;/* sinon le footer cache la fin de la page */
 	font-size: 100%;
 }
@@ -76,7 +76,7 @@ div{
 	height:198px;
 }
 /* image de projet*/
-#projet{
+#project{
 	width: 20%;
 	height: 20%;
 }
