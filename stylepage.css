@@ -70,13 +70,8 @@ div{
 	min-width: 68em;
 	
 }
-/* image sur le côté fixe */
+/* photo du cv*/
 #photo_cv{
-	position: fixed;
-	right:0;
-	margin-right:90px;
-	top:155px;
-	margin-top:70px;
 	width:155px;
 	height:198px;
 }
