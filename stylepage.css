@@ -33,7 +33,7 @@ h2{
 /* Menu */
 #menu{
 	margin-top:0%;
-	z-index:0; /* Je sais plus pourquoi */
+	z-index:0;
 	display:block;
 }
 
@@ -80,6 +80,7 @@ div{
 	width:155px;
 	height:198px;
 }
+/* image de projet*/
 #projet{
 	width: 20%;
 	height: 20%;
