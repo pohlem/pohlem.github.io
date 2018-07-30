@@ -1,107 +1,113 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<title>CV - Maxime Pohle</title>
 <head>
-	<h1>CV Numérique</h1>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="stylepage.css"> 
+	<title>CV - Maxime Pohle</title>
+	<!-- This script represents the file with all the functions that i use in this CV-->
+	<script src='functionsCV.js'></script>
 </head>
-<!-- This script represents the file with all the functions that i use in this CV-->
-<script src='functionsCV.js'></script>
-<!-- This part represents the different buttons of the CV -->
-<button type="button" onclick="showOneDiv('div1')">Présentation</button>
-<button type="button" onclick="showOneDiv('div2')">Compétences</button>
-<button type="button" onclick="showOneDiv('div3')">Formation</button>
-<button type="button" onclick="showOneDiv('div4')">Expériences professionnelles</button>
-<button type="button" onclick="showOneDiv('div5')">Contact</button>
+<body>
+	<header><h1>CV Numérique</h1>
+		<nav id="menu">
+			<ul>
+				<button type="button" onclick="showOneDiv('div1')">Présentation</button>
+				<button type="button" onclick="showOneDiv('div2')">Compétences</button>
+				<button type="button" onclick="showOneDiv('div3')">Formation</button>
+				<button type="button" onclick="showOneDiv('div4')">Expériences professionnelles</button>
+				<button type="button" onclick="showOneDiv('div5')">Contact</button>
+			</ul> 
+		</nav>
+		</header>
+
+		<!-- This part represents the different buttons of the CV -->
+
 <!-- This part represents the different menus of the CV 
 	Part 1 : Presentation-->
-	<body>
-		<div class="my-menus" id="div1">
-			<h2>Présentation</h2>
-			Bonjour, je m'appelle Pohle Maxime. <br/>
-			<img id="logo" src="images/photo_cv.PNG" border="2">
-		</div>
-		<!-- Part 2 : Skills-->
-		<div class="my-menus" id="div2" style="display: none;">
-			<h2>Compétences</h2>
-			<table>
-				<tr>
-					<td>Java</td>
-					<td><progress value="100" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>SQL</td>
-					<td><progress value="90" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>C</td>
-					<td><progress value="80" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>JavaScript</td>
-					<td><progress value="60" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>HTML</td>
-					<td><progress value="55" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>CSS</td>
-					<td><progress value="45" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>C#</td>
-					<td><progress value="30" max="100"></progress></td>
-				</tr>
-				<tr>
-					<td>C++</td>
-					<td><progress value="15" max="100"></progress></td>
-				</tr>
-			</table>
-		</div>
-		<!-- Part 3 : Formation-->
-		<div class="my-menus" id="div3" style="display: none;">
-			<h2>Formation</h2>
-			<table>
-				<tr>
-					<td>2016 - 2017 :</td>
-					<td>Licence Informatique à l'IUT Lille 1</td>
-				</tr>
-				<tr>
-					<td>2014 - 2016 :</td>
-					<td>DUT Informatique à l'IUT Lille 1</td>
-				</tr>
-				<tr>
-					<td>2014 :</td>
-					<td>Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</td>
-				</tr>
-			</table>
-		</div>
-		<!-- Part 4 : Professional Experiences-->
-		<div class="my-menus" id="div4" style="display: none;">
-			<h2>Expériences professionnelles</h2>
-			Stage à l'ISEC (Instituto Superior de Engenharia de Coimbra) avec comme projet d'implémenter un lexer et un parser dans Java<br/>
-			Life-Generator | Développement d'un logiciel générateur de noms, d'histoires et de portraits pour permettre d'incarner un personnage fictif.<br/>
-			Virtual War | Développement et test d'un jeu de plateau (jeu de strat&eacutegie) en respectant le cahier des charges.<br/>
-			Edurace | Développement d'un logiciel éducatif ayant pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base. (Mathématiques, Histoire...)
-		</div>
-		<!-- Part 5 : Contact-->
-		<div class="my-menus" id="div5" style="display: none;">
-			<h2>Contact</h2>
-			<table>
-				<tr>
-					<td>Téléphone</td>
-					<td><a href="tel:+33613242735">06.13.24.27.35</a> <br/></td>
-				</tr>
-				<tr>
-					<td>Adresse e-mail</td>
-					<td><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></td>
-				</tr>
-			</table>
-		</div>
-	</body>
-	<footer>
-		I'm hosted with GitHub Pages.<br/>
-		Site réalisé par Maxime Pohle.
-	</footer>
-	</html>
+
+	<div class="my-menus" id="div1">
+		<h2>Présentation</h2>
+		<img id="photo_cv" src="images/photo_cv.PNG" border="2">
+		Bonjour, je m'appelle Pohle Maxime. <br/>
+		<p>J'ai 21 ans. J'habite actuellement à Cuffies (02880), plus précisement 6 route de Chavigny. 
+		Je parle anglais où je possède un niveau B2 lié au CERCL et espagnol avec un niveau B1.
+		Je possède le permis B avec un véhicule.</p>
+		<p>J'aime les jeux vidéos surtout les jeux bac à sable. Ils permettent de faire travailler sa créativité tout en se divertissant. J'adore regarder des séries policières car j'aime trouver le coupable par les indices laisser tout au long d'un épisode. J'aime aussi le football et le basket-ball car ce sont des sports où le colletif est important.
+		Le football est aussi un des seuls sports où tout le monde peut se rassembler.</p>
+	</div>
+	<!-- Part 2 : Skills-->
+	<div class="my-menus" id="div2" style="display: none;">
+		<h2>Compétences</h2>
+		<table>
+			<tr>
+				<td>Java</td>
+				<td><progress value="100" max="100"></progress></td>
+				<td>SQL</td>
+				<td><progress value="90" max="100"></progress></td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td><progress value="80" max="100"></progress></td>
+				<td>JavaScript</td>
+				<td><progress value="60" max="100"></progress></td>
+			</tr>
+			<tr>
+				<td>HTML</td>
+				<td><progress value="55" max="100"></progress></td>
+				<td>CSS</td>
+				<td><progress value="45" max="100"></progress></td>
+			</tr>
+			<tr>
+				<td>C#</td>
+				<td><progress value="30" max="100"></progress></td>
+				<td>C++</td>
+				<td><progress value="15" max="100"></progress></td>
+			</tr>
+		</table>
+	</div>
+	<!-- Part 3 : Formation-->
+	<div class="my-menus" id="div3" style="display: none;">
+		<h2>Formation</h2>
+		<table>
+			<tr>
+				<td>2016 - 2017 :</td>
+				<td>Licence Informatique à l'IUT Lille 1</td>
+			</tr>
+			<tr>
+				<td>2014 - 2016 :</td>
+				<td>DUT Informatique à l'IUT Lille 1</td>
+			</tr>
+			<tr>
+				<td>2014 :</td>
+				<td>Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Part 4 : Professional Experiences-->
+	<div class="my-menus" id="div4" style="display: none;">
+		<h2>Expériences professionnelles</h2>
+		Stage à l'ISEC (Instituto Superior de Engenharia de Coimbra) avec comme projet d'implémenter un lexer et un parser dans Java<br/>
+		Life-Generator | Développement d'un logiciel générateur de noms, d'histoires et de portraits pour permettre d'incarner un personnage fictif.<br/>
+		Virtual War | Développement et test d'un jeu de plateau (jeu de stratégie) en respectant le cahier des charges.<br/>
+		Edurace | Développement d'un logiciel éducatif ayant pour o
+	</div>
+	<!-- Part 5 : Contact-->
+	<div class="my-menus" id="div5" style="display: none;">
+		<h2>Contact</h2>
+		<table>
+			<tr>
+				<td>Téléphone</td>
+				<td><a href="tel:+33613242735">06.13.24.27.35</a> <br/></td>
+			</tr>
+			<tr>
+				<td>Adresse e-mail</td>
+				<td><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<footer>
+	I'm hosted with GitHub Pages.<br/>
+	Site réalisé par Maxime Pohle.
+</footer>
+</html>

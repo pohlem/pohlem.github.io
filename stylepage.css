@@ -1,0 +1,100 @@
+﻿/* Corps de la page */
+body{
+	background-color: #FCFAE1;
+	margin:0px;
+	font-family:Georgia, serif;
+	margin-top:4%;
+	margin-bottom:250px;/* sinon le footer cache la fin de la page */
+	font-size: 100%;
+}
+
+/* Tête de la page */
+
+header{
+	position:fixed;
+	top: 0%;
+	border-bottom: 2px solid white;
+	height:10em;
+	width:100%;
+	background-color:#354458;
+	z-index:1; /* Pour que le texte reste en dessous du header */
+
+}
+h1{
+	margin:1.5%;
+	font-size: 2.3em;
+	color:white;
+}
+h2{
+	font-size: 1.7em;
+}
+
+
+/* Menu */
+#menu{
+	margin-top:0%;
+	z-index:0; /* Je sais plus pourquoi */
+	display:block;
+}
+
+#menu>ul{
+	position:fixed;
+	padding:0%;
+	width:100%;
+	background-color: #3B3A35;
+}
+
+#menu>ul>button{
+	color:white;
+	float:left;
+	position:relative;
+	text-align:center;
+	list-style-type:none;
+	padding: 1%;
+	font-size: 100%;
+	width: 20%;	background-color: #3B3A35;
+}
+	
+/* Contenu de la page */		
+div{
+	position:relative;
+	top:145px;
+	left:0px;
+	margin-left:70px;
+	/*background-color: #FCFAE1;*/
+	border-radius: 25px;
+	margin-right:350px;
+	text-align:justify;
+	padding:3%;
+	border:5px solid #354458;
+	min-width: 68em;
+	
+}
+/* image sur le côté fixe */
+#photo_cv{
+	position: fixed;
+	right:0;
+	margin-right:90px;
+	top:155px;
+	margin-top:70px;
+	width:155px;
+	height:198px;
+}
+/* pied de page */	
+footer{
+	position:fixed;
+	bottom:0;
+	line-height:normal;
+	width:100%;
+	height:55px;
+	text-align:center;
+	color:white;
+	border-top:2px solid white;
+	background-color:#354458;
+	padding-top:0.5%;
+	padding-bottom:0%;
+	
+}
+		
+		
+	
