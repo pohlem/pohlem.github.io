@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="stylepage.css">
@@ -13,125 +13,124 @@
 	<header>
 		<h1>CV Numérique de Maxime Pohle</h1>
 		<!-- This part represents the different buttons of the CV -->
-		<nav id="menu">
-			<ul>
-				<li><button type="button" onclick="showOneDiv('div1')">Présentation</button>
-				<button type="button" onclick="showOneDiv('div2')">Compétences</button>
-				<button type="button" onclick="showOneDiv('div3')">Formation</button>
-				<button type="button" onclick="showOneDiv('div4')">Expériences professionnelles</button>
-				<button type="button" onclick="showOneDiv('div5')">Contact</button></li>
-			</ul>
-		</nav>
+		<div id="menu"><button onclick="showHideDiv('divm')">Menu</button></div>
+		<div id="divm" style="display: none;">
+			<div class="my-divm"><button type="button" onclick="showOneDiv('div1')">Présentation</button></div>
+			<div class="my-divm"><button type="button" onclick="showOneDiv('div2')">Compétences</button></div>
+			<div class="my-divm"><button type="button" onclick="showOneDiv('div3')">Formation</button></div>
+			<div class="my-divm"><button type="button" onclick="showOneDiv('div4')">Expériences professionnelles</button></div>
+			<div class="my-divm"><button type="button" onclick="showOneDiv('div5')">Contact</button></div>
+		</div>
 	</header>
 
 	<!-- This part represents the different menus of the CV
-	Part 1 : Presentation-->
+		Part 1 : Presentation-->
 
-	<div class="my-menus" id="div1">
-		<h2>Présentation</h2>
+		<div class="my-menus" id="div1">
+			<h2>Présentation</h2>
 
-		<center><img id="photo_cv" src="images/photo_cv.PNG" border="2"></center>
+			<center><img id="photo_cv" src="images/photo_cv.PNG" border="2"></center>
 
-		<p>Bonjour, moi, c'est Maxime Pohle.</p><br/>
+			<p>Bonjour, moi, c'est Maxime Pohle.</p><br/>
 
-		<u>Alors, par où commencer ? Je sais ! Laissez-moi me présenter.</u> <br/>
+			<u>Alors, par où commencer ? Je sais ! Laissez-moi me présenter.</u> <br/>
 
-		<p>J'ai 21 ans. J'habite actuellement à Cuffies, dans l’Aisne. Je possède un niveau B2 en anglais et un niveau B1 en espagnol. Je possède également le permis B avec un véhicule.</p>
-		<p>J'aime les jeux vidéos, en particulier, les jeux bac à sable. Ils permettent de faire travailler la créativité tout en se divertissant. J'adore regarder des séries policières car comme à l’instar des protagonistes, j’aime trouver la solution à un problème. J'aime aussi le football et le basket-ball car ce sont des sports qui rassemblent et où le collectif est important.</p>
+			<p>J'ai 21 ans. J'habite actuellement à Cuffies, dans l’Aisne. Je possède un niveau B2 en anglais et un niveau B1 en espagnol. Je possède également le permis B avec un véhicule.</p>
+			<p>J'aime les jeux vidéos, en particulier, les jeux bac à sable. Ils permettent de faire travailler la créativité tout en se divertissant. J'adore regarder des séries policières car comme à l’instar des protagonistes, j’aime trouver la solution à un problème. J'aime aussi le football et le basket-ball car ce sont des sports qui rassemblent et où le collectif est important.</p>
 
-		<u>Comment me décrire ?</u>
+			<u>Comment me décrire ?</u>
 
-		<p>Les projets auxquels j'ai participé durant mon DUT Informatique m'ont aidé à développer mon sens de l'organisation, ainsi que mes capacités de management d'équipe. En effet, j'ai eu l'occasion à deux reprises d'être assigné à des rôles décisionnaires, notamment lors du projet « Virtual War » (jeu de plateau informatisé) et « Edurace » (jeu éducatif) où j'ai dû gérer mon groupe de travail en répartissant les différentes tâches ainsi qu'en prenant des décisions lors de brainstormings. Possédant un bon esprit d'équipe, cela me permet de travailler de manière plus pertinente avec les différents acteurs d'un projet et de mettre en avant l'entraide.</p>
+			<p>Les projets auxquels j'ai participé durant mon DUT Informatique m'ont aidé à développer mon sens de l'organisation, ainsi que mes capacités de management d'équipe. En effet, j'ai eu l'occasion à deux reprises d'être assigné à des rôles décisionnaires, notamment lors du projet « Virtual War » (jeu de plateau informatisé) et « Edurace » (jeu éducatif) où j'ai dû gérer mon groupe de travail en répartissant les différentes tâches ainsi qu'en prenant des décisions lors de brainstormings. Possédant un bon esprit d'équipe, cela me permet de travailler de manière plus pertinente avec les différents acteurs d'un projet et de mettre en avant l'entraide.</p>
 
-		<u>D'où vient ma passion pour l'informatique ?</u>
+			<u>D'où vient ma passion pour l'informatique ?</u>
 
-		<p>Alors que j'étais encore au collège, mon frère part en DUT Informatique. Il me montre alors ce qu'est l’informatique, et plus précisément la programmation. J'apprécie tout de suite cela et je décide de faire plus tard comme lui un DUT Informatique. Après avoir obtenu mon bac, je pars en DUT Informatique à Lille. J'apprends toute sorte de chose à l’issue de cette formation (Java, C, HTML, JavaScript...) mais aussi sur la gestion de projet (méthode Agile...). Au bout de deux années d’études, j'obtiens mon DUT Informatique et je décide alors de continuer mes études supérieures en poursuivant dans une troisième année de licence informatique.</p>
-	</div>
-	<!-- Part 2 : Skills-->
-	<div class="my-menus" id="div2" style="display: none;">
-		<h2>Compétences</h2>
-		<div class="my-comp">
-			<h3><u>Informatiques</u></h3>
+			<p>Alors que j'étais encore au collège, mon frère part en DUT Informatique. Il me montre alors ce qu'est l’informatique, et plus précisément la programmation. J'apprécie tout de suite cela et je décide de faire plus tard comme lui un DUT Informatique. Après avoir obtenu mon bac, je pars en DUT Informatique à Lille. J'apprends toute sorte de chose à l’issue de cette formation (Java, C, HTML, JavaScript...) mais aussi sur la gestion de projet (méthode Agile...). Au bout de deux années d’études, j'obtiens mon DUT Informatique et je décide alors de continuer mes études supérieures en poursuivant dans une troisième année de licence informatique.</p>
+		</div>
+		<!-- Part 2 : Skills-->
+		<div class="my-menus" id="div2" style="display: none;">
+			<h2>Compétences</h2>
 			<div class="my-comp">
-				<ul class="puces">
-					<li>Java <progress value="100" max="100"></progress></li>
-					<li>SQL <progress value="90" max="100"></progress></li>
-					<li>C <progress value="80" max="100"></progress></li>
-					<li>JavaScript <progress value="60" max="100"></progress></li>
-				</ul>
+				<h3><u>Informatiques</u></h3>
+				<div class="my-comp">
+					<ul class="puces">
+						<li>Java <progress value="100" max="100"></progress></li>
+						<li>SQL <progress value="90" max="100"></progress></li>
+						<li>C <progress value="80" max="100"></progress></li>
+						<li>JavaScript <progress value="60" max="100"></progress></li>
+					</ul>
+				</div>
+				<div class="my-comp">
+					<ul class="puces">
+						<li>HTML <progress value="55" max="100"></progress></li>
+						<li>CSS <progress value="45" max="100"></progress></li>
+						<li>C# <progress value="30" max="100"></progress></li>
+						<li>C++ <progress value="15" max="100"></progress></li>
+					</ul>
+				</div>
 			</div>
 			<div class="my-comp">
-				<ul class="puces">
-					<li>HTML <progress value="55" max="100"></progress></li>
-					<li>CSS <progress value="45" max="100"></progress></li>
-					<li>C# <progress value="30" max="100"></progress></li>
-					<li>C++ <progress value="15" max="100"></progress></li>
-				</ul>
+				<h3><u>Générales</u></h3>
+				<div class="my-comp">
+					<ul>
+						<li>Travailler en équipe</li>
+						<li>Inventeur</li>
+						<li>Organisation</li>
+						<li>Analyse des problèmes techniques</li>
+					</ul>
+				</div>
+				<div class="my-comp">
+					<ul>
+						<li>Déterminer des mesures correctives</li>
+						<li>Établir un cahier des charges</li>
+						<li>Gestion de projet</li>
+						<li>Analyser les besoins du client</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div class="my-comp">
-			<h3><u>Générales</u></h3>
-			<div class="my-comp">
-				<ul>
-					<li>Travailler en équipe</li>
-					<li>Inventeur</li>
-					<li>Organisation</li>
-					<li>Analyse des problèmes techniques</li>
-				</ul>
-			</div>
-			<div class="my-comp">
-				<ul>
-					<li>Déterminer des mesures correctives</li>
-					<li>Établir un cahier des charges</li>
-					<li>Gestion de projet</li>
-					<li>Analyser les besoins du client</li>
-				</ul>
-			</div>
+		<!-- Part 3 : Formation-->
+		<div class="my-menus" id="div3" style="display: none;">
+			<h2>Formation</h2>
+			<ul class="puces">
+				<li>2016 - 2017 : Licence Informatique à <strong>l'IUT Lille 1</strong></li>
+				<li>2016 : Stage à <strong>l'ISEC</strong> (Instituto Superior de Engenharia de Coimbra) au Portugal avec comme projet d'implémenter un lexer et un parser dans Java</li>
+				<li>2014 - 2016 : DUT Informatique à <strong>l'IUT Lille 1</strong></li>
+				<li>2014 : Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</li>
+			</ul>
 		</div>
-	</div>
-	<!-- Part 3 : Formation-->
-	<div class="my-menus" id="div3" style="display: none;">
-		<h2>Formation</h2>
-		<ul class="puces">
-			<li>2016 - 2017 : Licence Informatique à <strong>l'IUT Lille 1</strong></li>
-			<li>2016 : Stage à <strong>l'ISEC</strong> (Instituto Superior de Engenharia de Coimbra) au Portugal avec comme projet d'implémenter un lexer et un parser dans Java</li>
-			<li>2014 - 2016 : DUT Informatique à <strong>l'IUT Lille 1</strong></li>
-			<li>2014 : Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</li>
-		</ul>
-	</div>
-	<!-- Part 4 : Professional Experiences-->
-	<div class="my-menus" id="div4" style="display: none;">
-		<h2>Expériences professionnelles</h2>
-		<p>Au cours de mes trois années universitaires, j'ai réalisé plusieurs projets, seul ou en groupe.</p>
-		<h3><u>Edurace</u></h3>
-		<p>Tout d'abord, j'ai commencé par développer un jeu éducatif en binôme nommé <strong>Edurace</strong>. Edurace a pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base (Mathématiques, Histoire...).  Ce projet a commencé par un brainstorming afin de déterminer quelle sera l'idée générale de ce jeu.</p>
-		<center><img id="project" src="images/exemple_edurace.png" border="2"><br/>Exemple de Edurace</center>
-		<p>Le joueur doit répondre à plusieurs questions données par le programme sur le thème des mathématiques. Lorsqu'il choisit la bonne réponse, le joueur peut continuer le jeu par contre s'il choisit la mauvaise réponse, il perd et alors il devra recommencer la partie s'il veut continuer à jouer au jeu créé. Mais encore, le joueur peut diriger un vaisseau afin de choisir les bonnes réponses et esquiver des obstacles présent dans le jeu. Ce jeu possède alors une durée de vie illimitée car le jeu se finit dès que le joueur a faux. Il peut alors repérer son niveau grâce à un score et un tableau des scores.<br/>Grâce au projet que nous avons développé, nous avons été choisis par nos enseignants afin de pouvoir montrer le projet réalisé à des enfants.</p>
-		<h3><u>Virtual War</u></h3>
-		<p>Ensuite, il y a eu le projet <strong>Virtual War</strong>, un jeu de plateau où les deux joueurs ont trois pièces chacun et le but est de détruire les trois pièces de l'adversaire. J'étais dans un groupe de cinq, je devais développer et tester le jeu. En testant le jeu, j'ai appris beaucoup de choses sur la gestion d'un projet avec le rédaction d'un cahier des charges (qui décrit les fonctionnalités du jeu) et d'un cahier de test.</p>
-		<center><img id="project" src="images/exemple_vw.png" border="2"><br/>Exemple de Virtual War</center>
-		<h3><u>Life-Generator</u></h3>
-		<p>Après, au début de la deuxième année de DUT, je devais faire un projet avec la méthode Agile. Avec mon groupe, nous avons décidé de réaliser un créateur de personnages <strong>Life-Generator</strong>.</p>
-		<center><img id="project" src="images/exemple_life-generator.png" border="2"><br/>Visuel de Life-Generator</center>
-		<h3><u>Lexer et parser</u></h3>
-		<p>Enfin, pour mon stage de fin de diplôme, je devais réaliser <strong>un lexer et un parser</strong> dans Java. Si vous ne savez pas ce que c'est, en toute simplicité, c'est un traducteur informatique. Par exemple, on écrit A est grand, le traducteur comprend que "A" est un prénom, "est" est un verbe et "grand" est adjectif. Il garde comme information que A possède une qualité c'est qu'il est grand. Voilà, pour l'explication. Étant donné que je n'avais aucune connaissance sur le sujet, ce stage m'a appris à découvrir de nouveaux savoirs au-delà de mon apprentissage universitaire. De plus, j'ai appris à m'organiser grâce à ce projet.<br/> <a href="documents/final_report_internship_2015-2016.pdf">Voici le rapport de stage en anglais.</a></p>
-	</div>
-	<!-- Part 5 : Contact-->
-	<div class="my-menus" id="div5" style="display: none;">
-		<h2>Contact</h2>
-		<ul class="puces">
-			<li><h3>Portable ☎</h3></li>
-			<li><a href="tel:+33613242735">06.13.24.27.35</a></li>
-			<li><h3>E-mail ✉</h3></li>
-			<li><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></li>
-			<li><h3>Adresse</h3></li>
-			<li>6 route de Chavigny, Cuffies 02880</li>
-		</ul>
-	</div>
-	<!-- Pied de page -->
-	<footer>
-		I'm hosted with GitHub Pages.<br/>
-		Site réalisé par <FONT COLOR="paleturquoise">Maxime Pohle</FONT>.
-	</footer>
-</body>
-</html>
+		<!-- Part 4 : Professional Experiences-->
+		<div class="my-menus" id="div4" style="display: none;">
+			<h2>Expériences professionnelles</h2>
+			<p>Au cours de mes trois années universitaires, j'ai réalisé plusieurs projets, seul ou en groupe.</p>
+			<h3><u>Edurace</u></h3>
+			<p>Tout d'abord, j'ai commencé par développer un jeu éducatif en binôme nommé <strong>Edurace</strong>. Edurace a pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base (Mathématiques, Histoire...).  Ce projet a commencé par un brainstorming afin de déterminer quelle sera l'idée générale de ce jeu.</p>
+			<center><img id="project" src="images/exemple_edurace.png" border="2"><br/>Exemple de Edurace</center>
+			<p>Le joueur doit répondre à plusieurs questions données par le programme sur le thème des mathématiques. Lorsqu'il choisit la bonne réponse, le joueur peut continuer le jeu par contre s'il choisit la mauvaise réponse, il perd et alors il devra recommencer la partie s'il veut continuer à jouer au jeu créé. Mais encore, le joueur peut diriger un vaisseau afin de choisir les bonnes réponses et esquiver des obstacles présent dans le jeu. Ce jeu possède alors une durée de vie illimitée car le jeu se finit dès que le joueur a faux. Il peut alors repérer son niveau grâce à un score et un tableau des scores.<br/>Grâce au projet que nous avons développé, nous avons été choisis par nos enseignants afin de pouvoir montrer le projet réalisé à des enfants.</p>
+			<h3><u>Virtual War</u></h3>
+			<p>Ensuite, il y a eu le projet <strong>Virtual War</strong>, un jeu de plateau où les deux joueurs ont trois pièces chacun et le but est de détruire les trois pièces de l'adversaire. J'étais dans un groupe de cinq, je devais développer et tester le jeu. En testant le jeu, j'ai appris beaucoup de choses sur la gestion d'un projet avec le rédaction d'un cahier des charges (qui décrit les fonctionnalités du jeu) et d'un cahier de test.</p>
+			<center><img id="project" src="images/exemple_vw.png" border="2"><br/>Exemple de Virtual War</center>
+			<h3><u>Life-Generator</u></h3>
+			<p>Après, au début de la deuxième année de DUT, je devais faire un projet avec la méthode Agile. Avec mon groupe, nous avons décidé de réaliser un créateur de personnages <strong>Life-Generator</strong>.</p>
+			<center><img id="project" src="images/exemple_life-generator.png" border="2"><br/>Visuel de Life-Generator</center>
+			<h3><u>Lexer et parser</u></h3>
+			<p>Enfin, pour mon stage de fin de diplôme, je devais réaliser <strong>un lexer et un parser</strong> dans Java. Si vous ne savez pas ce que c'est, en toute simplicité, c'est un traducteur informatique. Par exemple, on écrit A est grand, le traducteur comprend que "A" est un prénom, "est" est un verbe et "grand" est adjectif. Il garde comme information que A possède une qualité c'est qu'il est grand. Voilà, pour l'explication. Étant donné que je n'avais aucune connaissance sur le sujet, ce stage m'a appris à découvrir de nouveaux savoirs au-delà de mon apprentissage universitaire. De plus, j'ai appris à m'organiser grâce à ce projet.<br/> <a href="documents/final_report_internship_2015-2016.pdf">Voici le rapport de stage en anglais.</a></p>
+		</div>
+		<!-- Part 5 : Contact-->
+		<div class="my-menus" id="div5" style="display: none;">
+			<h2>Contact</h2>
+			<ul class="puces">
+				<li><h3>Portable ☎</h3></li>
+				<li><a href="tel:+33613242735">06.13.24.27.35</a></li>
+				<li><h3>E-mail ✉</h3></li>
+				<li><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></li>
+				<li><h3>Adresse</h3></li>
+				<li>6 route de Chavigny, Cuffies 02880</li>
+			</ul>
+		</div>
+		<!-- Pied de page -->
+		<footer>
+			I'm hosted with GitHub Pages.<br/>
+			Site réalisé par <FONT COLOR="paleturquoise">Maxime Pohle</FONT>.
+		</footer>
+	</body>
+	</html>
