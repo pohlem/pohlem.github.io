@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="stylepage.css"> 
+	<link rel="stylesheet" type="text/css" href="stylepage.css">
 	<title>CV - Maxime Pohle</title>
 	<!-- This script represents the file with all the functions that i use in this CV-->
 	<script src='functionsCV.js'></script>
@@ -15,24 +15,24 @@
 		<!-- This part represents the different buttons of the CV -->
 		<nav id="menu">
 			<ul>
-				<button type="button" onclick="showOneDiv('div1')">Présentation</button>
+				<li><button type="button" onclick="showOneDiv('div1')">Présentation</button>
 				<button type="button" onclick="showOneDiv('div2')">Compétences</button>
 				<button type="button" onclick="showOneDiv('div3')">Formation</button>
 				<button type="button" onclick="showOneDiv('div4')">Expériences professionnelles</button>
-				<button type="button" onclick="showOneDiv('div5')">Contact</button>
-			</ul> 
+				<button type="button" onclick="showOneDiv('div5')">Contact</button></li>
+			</ul>
 		</nav>
 	</header>
 
-<!-- This part represents the different menus of the CV 
+	<!-- This part represents the different menus of the CV
 	Part 1 : Presentation-->
 
 	<div class="my-menus" id="div1">
 		<h2>Présentation</h2>
-		
+
 		<center><img id="photo_cv" src="images/photo_cv.PNG" border="2"></center>
 
-		Bonjour, moi, c'est Maxime Pohle. <br/> <br/>
+		<p>Bonjour, moi, c'est Maxime Pohle.</p><br/>
 
 		<u>Alors, par où commencer ? Je sais ! Laissez-moi me présenter.</u> <br/>
 
@@ -50,118 +50,88 @@
 	<!-- Part 2 : Skills-->
 	<div class="my-menus" id="div2" style="display: none;">
 		<h2>Compétences</h2>
-		<h3><u>Informatiques</u></h3>
-		<table>
-			<tr>
-				<td>Java</td>
-				<td><progress value="100" max="100"></progress></td>
-				<td>SQL</td>
-				<td><progress value="90" max="100"></progress></td>
-			</tr>
-			<tr>
-				<td>C</td>
-				<td><progress value="80" max="100"></progress></td>
-				<td>JavaScript</td>
-				<td><progress value="60" max="100"></progress></td>
-			</tr>
-			<tr>
-				<td>HTML</td>
-				<td><progress value="55" max="100"></progress></td>
-				<td>CSS</td>
-				<td><progress value="45" max="100"></progress></td>
-			</tr>
-			<tr>
-				<td>C#</td>
-				<td><progress value="30" max="100"></progress></td>
-				<td>C++</td>
-				<td><progress value="15" max="100"></progress></td>
-			</tr>
-		</table>
-		<h3><u>Générales</u></h3>
-		<table>
-			<tr>
-				<td>• Travailler en équipe</td>
-				<td>• Inventeur</td>
-			</tr>
-			<tr>
-				<td>• Organisation</td>
-				<td>• Analyse des problèmes techniques</td>
-			</tr>
-			<tr>
-				<td>• Déterminer des mesures correctives</td>
-				<td>• Établir un cahier des charges</td>
-			</tr>
-			<tr>
-				<td>• Gestion de projet</td>
-				<td>• Analyser les besoins du client</td>
-			</tr>
-		</table>
+		<div class="my-comp">
+			<h3><u>Informatiques</u></h3>
+			<div class="my-comp">
+				<ul class="puces">
+					<li>Java <progress value="100" max="100"></progress></li>
+					<li>SQL <progress value="90" max="100"></progress></li>
+					<li>C <progress value="80" max="100"></progress></li>
+					<li>JavaScript <progress value="60" max="100"></progress></li>
+				</ul>
+			</div>
+			<div class="my-comp">
+				<ul class="puces">
+					<li>HTML <progress value="55" max="100"></progress></li>
+					<li>CSS <progress value="45" max="100"></progress></li>
+					<li>C# <progress value="30" max="100"></progress></li>
+					<li>C++ <progress value="15" max="100"></progress></li>
+				</ul>
+			</div>
+		</div>
+		<div class="my-comp">
+			<h3><u>Générales</u></h3>
+			<div class="my-comp">
+				<ul>
+					<li>Travailler en équipe</li>
+					<li>Inventeur</li>
+					<li>Organisation</li>
+					<li>Analyse des problèmes techniques</li>
+				</ul>
+			</div>
+			<div class="my-comp">
+				<ul>
+					<li>Déterminer des mesures correctives</li>
+					<li>Établir un cahier des charges</li>
+					<li>Gestion de projet</li>
+					<li>Analyser les besoins du client</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<!-- Part 3 : Formation-->
 	<div class="my-menus" id="div3" style="display: none;">
 		<h2>Formation</h2>
-		<table>
-			<tr>
-				<td>2016 - 2017 :</td>
-				<td>Licence Informatique à <b>l'IUT Lille 1</b></td>
-			</tr>
-			<tr>
-				<td>2016 :</td>
-				<td>Stage à <b>l'ISEC</b> (Instituto Superior de Engenharia de Coimbra) au Portugal avec comme projet d'implémenter un lexer et un parser dans Java</b></td>
-			</tr>
-			<tr>
-				<td>2014 - 2016 :</td>
-				<td>DUT Informatique à <b>l'IUT Lille 1</b></td>
-			</tr>
-			<tr>
-				<td>2014 :</td>
-				<td>Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</td>
-			</tr>
-		</table>
+		<ul class="puces">
+			<li>2016 - 2017 : Licence Informatique à <strong>l'IUT Lille 1</strong></li>
+			<li>2016 : Stage à <strong>l'ISEC</strong> (Instituto Superior de Engenharia de Coimbra) au Portugal avec comme projet d'implémenter un lexer et un parser dans Java</li>
+			<li>2014 - 2016 : DUT Informatique à <strong>l'IUT Lille 1</strong></li>
+			<li>2014 : Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</li>
+		</ul>
 	</div>
 	<!-- Part 4 : Professional Experiences-->
 	<div class="my-menus" id="div4" style="display: none;">
 		<h2>Expériences professionnelles</h2>
-		Au cours de mes trois années universitaires, j'ai réalisé plusieurs projets, seul ou en groupe. <br/>
+		<p>Au cours de mes trois années universitaires, j'ai réalisé plusieurs projets, seul ou en groupe.</p>
 		<h3><u>Edurace</u></h3>
-		<p>Tout d'abord, j'ai commencé par développer un jeu éducatif en binôme nommé <b>Edurace</b>. Edurace a pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base (Mathématiques, Histoire...).  Ce projet a commencé par un brainstorming afin de déterminer quelle sera l'idée générale de ce jeu.</p>
+		<p>Tout d'abord, j'ai commencé par développer un jeu éducatif en binôme nommé <strong>Edurace</strong>. Edurace a pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base (Mathématiques, Histoire...).  Ce projet a commencé par un brainstorming afin de déterminer quelle sera l'idée générale de ce jeu.</p>
 		<center><img id="project" src="images/exemple_edurace.png" border="2"><br/>Exemple de Edurace</center>
-
-		<p>Le joueur doit répondre à plusieurs questions données par le programme sur le thème des mathématiques. Lorsqu'il choisit la bonne réponse, le joueur peut continuer le jeu par contre s'il choisit la mauvaise réponse, il perd et alors il devra recommencer la partie s'il veut continuer à jouer au jeu créé. Mais encore, le joueur peut diriger un vaisseau afin de choisir les bonnes réponses et esquiver des obstacles présent dans le jeu. Ce jeu possède alors une durée de vie illimitée car le jeu se finit dès que le joueur a faux. Il peut alors repérer son niveau grâce à un score et un tableau des scores.<br/>
-			Grâce au projet que nous avons développé, nous avons été choisis par nos enseignants afin de pouvoir montrer le projet réalisé à des enfants.
-		</p>
+		<p>Le joueur doit répondre à plusieurs questions données par le programme sur le thème des mathématiques. Lorsqu'il choisit la bonne réponse, le joueur peut continuer le jeu par contre s'il choisit la mauvaise réponse, il perd et alors il devra recommencer la partie s'il veut continuer à jouer au jeu créé. Mais encore, le joueur peut diriger un vaisseau afin de choisir les bonnes réponses et esquiver des obstacles présent dans le jeu. Ce jeu possède alors une durée de vie illimitée car le jeu se finit dès que le joueur a faux. Il peut alors repérer son niveau grâce à un score et un tableau des scores.<br/>Grâce au projet que nous avons développé, nous avons été choisis par nos enseignants afin de pouvoir montrer le projet réalisé à des enfants.</p>
 		<h3><u>Virtual War</u></h3>
-		<p>Ensuite, il y a eu le projet <b>Virtual War</b>, un jeu de plateau où les deux joueurs ont trois pièces chacun et le but est de détruire les trois pièces de l'adversaire. J'étais dans un groupe de cinq, je devais développer et tester le jeu. En testant le jeu, j'ai appris beaucoup de choses sur la gestion d'un projet avec le rédaction d'un cahier des charges (qui décrit les fonctionnalités du jeu) et d'un cahier de test.</p>
+		<p>Ensuite, il y a eu le projet <strong>Virtual War</strong>, un jeu de plateau où les deux joueurs ont trois pièces chacun et le but est de détruire les trois pièces de l'adversaire. J'étais dans un groupe de cinq, je devais développer et tester le jeu. En testant le jeu, j'ai appris beaucoup de choses sur la gestion d'un projet avec le rédaction d'un cahier des charges (qui décrit les fonctionnalités du jeu) et d'un cahier de test.</p>
 		<center><img id="project" src="images/exemple_vw.png" border="2"><br/>Exemple de Virtual War</center>
 		<h3><u>Life-Generator</u></h3>
-		<p>Après, au début de la deuxième année de DUT, je devais faire un projet avec la méthode Agile. Avec mon groupe, nous avons décidé de réaliser un créateur de personnages <b>Life-Generator</b>.</p>
+		<p>Après, au début de la deuxième année de DUT, je devais faire un projet avec la méthode Agile. Avec mon groupe, nous avons décidé de réaliser un créateur de personnages <strong>Life-Generator</strong>.</p>
 		<center><img id="project" src="images/exemple_life-generator.png" border="2"><br/>Visuel de Life-Generator</center>
 		<h3><u>Lexer et parser</u></h3>
-		<p>Enfin, pour mon stage de fin de diplôme, je devais réaliser <b>un lexer et un parser</b> dans Java. Si vous ne savez pas ce que c'est, en toute simplicité, c'est un traducteur informatique. Par exemple, on écrit A est grand, le traducteur comprend que "A" est un prénom, "est" est un verbe et "grand" est adjectif. Il garde comme information que A possède une qualité c'est qu'il est grand. Voilà, pour l'explication. Étant donné que je n'avais aucune connaissance sur le sujet, ce stage m'a appris à découvrir de nouveaux savoirs au-delà de mon apprentissage universitaire. De plus, j'ai appris à m'organiser grâce à ce projet.<br/>
-			<a href="documents/final_report_internship_2015-2016.pdf">Voici le rapport de stage en anglais.</a></p>
-		</div>
-		<!-- Part 5 : Contact-->
-		<div class="my-menus" id="div5" style="display: none;">
-			<h2>Contact</h2>
-			<table>
-				<tr>
-					<td>Portable ☎</td>
-					<td><a href="tel:+33613242735">06.13.24.27.35</a> <br/></td>
-				</tr>
-				<tr>
-					<td>E-mail ✉</td>
-					<td><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></td>
-				</tr>
-				<tr>
-					<td>Adresse</td>
-					<td>6 route de Chavigny, Cuffies 02880</td>
-				</tr>
-			</table>
-		</div>
-		<!-- Pied de page -->
-		<footer>
-			I'm hosted with GitHub Pages.<br/>
-			Site réalisé par <FONT COLOR="paleturquoise">Maxime Pohle</FONT>.
-		</footer>
-</body>	
+		<p>Enfin, pour mon stage de fin de diplôme, je devais réaliser <strong>un lexer et un parser</strong> dans Java. Si vous ne savez pas ce que c'est, en toute simplicité, c'est un traducteur informatique. Par exemple, on écrit A est grand, le traducteur comprend que "A" est un prénom, "est" est un verbe et "grand" est adjectif. Il garde comme information que A possède une qualité c'est qu'il est grand. Voilà, pour l'explication. Étant donné que je n'avais aucune connaissance sur le sujet, ce stage m'a appris à découvrir de nouveaux savoirs au-delà de mon apprentissage universitaire. De plus, j'ai appris à m'organiser grâce à ce projet.<br/> <a href="documents/final_report_internship_2015-2016.pdf">Voici le rapport de stage en anglais.</a></p>
+	</div>
+	<!-- Part 5 : Contact-->
+	<div class="my-menus" id="div5" style="display: none;">
+		<h2>Contact</h2>
+		<ul class="puces">
+			<li><h3>Portable ☎</h3></li>
+			<li><a href="tel:+33613242735">06.13.24.27.35</a></li>
+			<li><h3>E-mail ✉</h3></li>
+			<li><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></li>
+			<li><h3>Adresse</h3></li>
+			<li>6 route de Chavigny, Cuffies 02880</li>
+		</ul>
+	</div>
+	<!-- Pied de page -->
+	<footer>
+		I'm hosted with GitHub Pages.<br/>
+		Site réalisé par <FONT COLOR="paleturquoise">Maxime Pohle</FONT>.
+	</footer>
+</body>
 </html>
