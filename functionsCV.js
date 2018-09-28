@@ -7,10 +7,4 @@ function showOneDiv(anID) {
 	}
 	var div = document.getElementById('div'+anID);
 	div.style.display = "block";
-	/*Color the menu a who matches to the div selected*/
-	var myNavA = document.querySelectorAll('.my-nav-a'), i = 0, l = myNavA.length;
-	for (i; i < l; i++) {
-		myNavA[i].style.backgroundColor = '#354458';
-	}
-	myNavA[anID-1].style.backgroundColor = '#080808';
 }

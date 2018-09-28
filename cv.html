@@ -8,153 +8,185 @@
 	<meta name="author" content="Maxime Pohle">
 	<title>CV Numérique - Maxime Pohle</title>
 	<!-- Bootstrap core CSS -->
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
-	<link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="bootstrap_v4.1.3/css/bootstrap.min.css" rel="stylesheet">
 	<!-- My CSS file-->
 	<link href="stylepage.css" rel="stylesheet">
 </head>
 <body>
-	<!-- Menu of the website-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<!--Button of the menu icon-->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+	<div class="container-fluid">
+		<header>
+			<!-- Menu of the website-->
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+				<button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand">CV Numérique</a>
+				<a class="navbar-brand" href="#">CV Numérique</a>
+				<div class="collapse navbar-collapse" id="navigation" >
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="collapse"  data-target=".navbar-collapse.show" href="#" onclick="showOneDiv('1')">Présentation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#competences" onclick="showOneDiv('2')">Compétences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#formation" onclick="showOneDiv('3')">Formation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#experiences" onclick="showOneDiv('4')">Expériences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#contact" onclick="showOneDiv('5')">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--The different parts of my resume-->
+		<!--Part 1 : Presentation-->
+		<div class="my-menus" id="div1">
+			<div class="row justify-content-center">
+				<div class="col-xs-12 col-md-4 text-center">
+					<h2>Présentation</h2>
+					<img id="photo_cv" src="images/photo_cv.PNG" alt="Photo de Maxime Pohle">
+				</div>
 			</div>
-			<!--All the menu-->
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a class="my-nav-a" href="#" onclick="showOneDiv('1')">Présentation</a></li>
-					<li><a class="my-nav-a" href="#competences" onclick="showOneDiv('2')">Compétences</a></li>
-					<li><a class="my-nav-a" href="#formation" onclick="showOneDiv('3')">Formation</a></li>
-					<li><a class="my-nav-a" href="#experiences" onclick="showOneDiv('4')">Expériences professionnelles</a></li>
-					<li><a class="my-nav-a" href="#contact" onclick="showOneDiv('5')">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-	</div>
-	<!--The different parts of my resume-->
-	<!--Part 1 : Presentation-->
-	<div class="my-menus" id="div1">
-		<h2>Présentation</h2>
+			<div class="row">
+				<div class="col-12">
+					<p>Bonjour, moi, c'est Maxime Pohle.</p>
 
-		<center><img id="photo_cv" src="images/photo_cv.PNG" border="2"></center>
+					<p><u>Alors, par où commencer ? Je sais ! Laissez-moi me présenter.</u></p>
 
-		<p>Bonjour, moi, c'est Maxime Pohle.</p><br/>
+					<p>J'ai 21 ans. J'habite actuellement à Cuffies, dans l’Aisne. Je possède un niveau B2 en anglais et un niveau B1 en espagnol. Je possède également le permis B avec un véhicule.</p>
+					<p>J'aime les jeux vidéos, en particulier, les jeux bac à sable. Ils permettent de faire travailler la créativité tout en se divertissant. J'adore regarder des séries policières car comme à l’instar des protagonistes, j’aime trouver la solution à un problème. J'aime aussi le football et le basket-ball car ce sont des sports qui rassemblent et où le collectif est important.</p>
 
-		<u>Alors, par où commencer ? Je sais ! Laissez-moi me présenter.</u> <br/>
+					<p><u>Comment me décrire ?</u></p>
 
-		<p>J'ai 21 ans. J'habite actuellement à Cuffies, dans l’Aisne. Je possède un niveau B2 en anglais et un niveau B1 en espagnol. Je possède également le permis B avec un véhicule.</p>
-		<p>J'aime les jeux vidéos, en particulier, les jeux bac à sable. Ils permettent de faire travailler la créativité tout en se divertissant. J'adore regarder des séries policières car comme à l’instar des protagonistes, j’aime trouver la solution à un problème. J'aime aussi le football et le basket-ball car ce sont des sports qui rassemblent et où le collectif est important.</p>
+					<p>Les projets auxquels j'ai participé durant mon DUT Informatique m'ont aidé à développer mon sens de l'organisation, ainsi que mes capacités de management d'équipe. En effet, j'ai eu l'occasion à deux reprises d'être assigné à des rôles décisionnaires, notamment lors du projet « Virtual War » (jeu de plateau informatisé) et « Edurace » (jeu éducatif) où j'ai dû gérer mon groupe de travail en répartissant les différentes tâches ainsi qu'en prenant des décisions lors de brainstormings. Possédant un bon esprit d'équipe, cela me permet de travailler de manière plus pertinente avec les différents acteurs d'un projet et de mettre en avant l'entraide.</p>
 
-		<u>Comment me décrire ?</u>
+					<p><u>D'où vient ma passion pour l'informatique ?</u></p>
 
-		<p>Les projets auxquels j'ai participé durant mon DUT Informatique m'ont aidé à développer mon sens de l'organisation, ainsi que mes capacités de management d'équipe. En effet, j'ai eu l'occasion à deux reprises d'être assigné à des rôles décisionnaires, notamment lors du projet « Virtual War » (jeu de plateau informatisé) et « Edurace » (jeu éducatif) où j'ai dû gérer mon groupe de travail en répartissant les différentes tâches ainsi qu'en prenant des décisions lors de brainstormings. Possédant un bon esprit d'équipe, cela me permet de travailler de manière plus pertinente avec les différents acteurs d'un projet et de mettre en avant l'entraide.</p>
-
-		<u>D'où vient ma passion pour l'informatique ?</u>
-
-		<p>Alors que j'étais encore au collège, mon frère part en DUT Informatique. Il me montre alors ce qu'est l’informatique, et plus précisément la programmation. J'apprécie tout de suite cela et je décide de faire plus tard comme lui un DUT Informatique. Après avoir obtenu mon bac, je pars en DUT Informatique à Lille. J'apprends toute sorte de chose à l’issue de cette formation (Java, C, HTML, JavaScript...) mais aussi sur la gestion de projet (méthode Agile...). Au bout de deux années d’études, j'obtiens mon DUT Informatique et je décide alors de continuer mes études supérieures en poursuivant dans une troisième année de licence informatique.</p>
-	</div>
-	<!-- Part 2 : Skills-->
-	<div class="my-menus" id="div2" style="display: none;">
-		<h2>Compétences</h2>
-		<div class="my-comp">
-			<h3>Informatiques</h3>
-			<div class="my-comp">
-				<ul class="puces">
-					<li>Java <progress value="100" max="100"></progress></li>
-					<li>SQL <progress value="90" max="100"></progress></li>
-					<li>C <progress value="80" max="100"></progress></li>
-					<li>JavaScript <progress value="60" max="100"></progress></li>
-				</ul>
-			</div>
-			<div class="my-comp">
-				<ul class="puces">
-					<li>HTML <progress value="55" max="100"></progress></li>
-					<li>CSS <progress value="45" max="100"></progress></li>
-					<li>C# <progress value="30" max="100"></progress></li>
-					<li>C++ <progress value="15" max="100"></progress></li>
-				</ul>
+					<p>Alors que j'étais encore au collège, mon frère part en DUT Informatique. Il me montre alors ce qu'est l’informatique, et plus précisément la programmation. J'apprécie tout de suite cela et je décide de faire plus tard comme lui un DUT Informatique. Après avoir obtenu mon bac, je pars en DUT Informatique à Lille. J'apprends toute sorte de chose à l’issue de cette formation (Java, C, HTML, JavaScript...) mais aussi sur la gestion de projet (méthode Agile...). Au bout de deux années d’études, j'obtiens mon DUT Informatique et je décide alors de continuer mes études supérieures en poursuivant dans une troisième année de licence informatique.</p>
+				</div>
 			</div>
 		</div>
-		<div class="my-comp">
-			<h3>Générales</h3>
-			<div class="my-comp">
-				<ul>
-					<li>Travailler en équipe</li>
-					<li>Inventeur</li>
-					<li>Organisation</li>
-					<li>Analyse des problèmes techniques</li>
-				</ul>
-			</div>
-			<div class="my-comp">
-				<ul>
-					<li>Déterminer des mesures correctives</li>
-					<li>Établir un cahier des charges</li>
-					<li>Gestion de projet</li>
-					<li>Analyser les besoins du client</li>
-				</ul>
+		<!-- Part 2 : Skills-->
+		<div class="my-menus" id="div2" style="display: none;">
+			<h2>Compétences</h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3>Informatiques</h3>
+					<div class="my-comp">
+						<ul class="puces">
+							<li>Java <progress value="100" max="100"></progress></li>
+							<li>SQL <progress value="90" max="100"></progress></li>
+							<li>C <progress value="80" max="100"></progress></li>
+							<li>JavaScript <progress value="60" max="100"></progress></li>
+						</ul>
+					</div>
+					<div class="my-comp">
+						<ul class="puces">
+							<li>HTML <progress value="55" max="100"></progress></li>
+							<li>CSS <progress value="45" max="100"></progress></li>
+							<li>C# <progress value="30" max="100"></progress></li>
+							<li>C++ <progress value="15" max="100"></progress></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div><h3>Générales</h3></div>
+					<div class="my-comp">
+
+						<ul>
+							<li>Travailler en équipe</li>
+							<li>Inventeur</li>
+							<li>Organisation</li>
+							<li>Analyse des problèmes techniques</li>
+						</ul>
+					</div>
+					<div class="my-comp">
+						<ul>
+							<li>Déterminer des mesures correctives</li>
+							<li>Établir un cahier des charges</li>
+							<li>Gestion de projet</li>
+							<li>Analyser les besoins du client</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Part 3 : Formation-->
-	<div class="my-menus" id="div3" style="display: none;">
-		<h2>Formation</h2>
-		<ul class="puces">
-			<li>2016 - 2017 : Licence Informatique à <strong>l'IUT Lille 1</strong></li>
-			<li>2016 : Stage à <strong>l'ISEC</strong> (Instituto Superior de Engenharia de Coimbra) au Portugal avec comme projet d'implémenter un lexer et un parser dans Java</li>
-			<li>2014 - 2016 : DUT Informatique à <strong>l'IUT Lille 1</strong></li>
-			<li>2014 : Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</li>
-		</ul>
-	</div>
-	<!-- Part 4 : Professional Experiences-->
-	<div class="my-menus" id="div4" style="display: none;">
-		<h2>Expériences professionnelles</h2>
-		<p>Au cours de mes trois années universitaires, j'ai réalisé plusieurs projets, seul ou en groupe.</p>
-		<h3>Edurace</h3>
-		<p>Tout d'abord, j'ai commencé par développer un jeu éducatif en binôme nommé <strong>Edurace</strong>. Edurace a pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base (Mathématiques, Histoire...).  Ce projet a commencé par un brainstorming afin de déterminer quelle sera l'idée générale de ce jeu.</p>
-		<center><img id="project" src="images/exemple_edurace.png" border="2"><br/>Exemple de Edurace</center>
-		<p>Le joueur doit répondre à plusieurs questions données par le programme sur le thème des mathématiques. Lorsqu'il choisit la bonne réponse, le joueur peut continuer le jeu par contre s'il choisit la mauvaise réponse, il perd et alors il devra recommencer la partie s'il veut continuer à jouer au jeu créé. Mais encore, le joueur peut diriger un vaisseau afin de choisir les bonnes réponses et esquiver des obstacles présent dans le jeu. Ce jeu possède alors une durée de vie illimitée car le jeu se finit dès que le joueur a faux. Il peut alors repérer son niveau grâce à un score et un tableau des scores.<br/>Grâce au projet que nous avons développé, nous avons été choisis par nos enseignants afin de pouvoir montrer le projet réalisé à des enfants.</p>
-		<h3>Virtual War</h3>
-		<p>Ensuite, il y a eu le projet <strong>Virtual War</strong>, un jeu de plateau où les deux joueurs ont trois pièces chacun et le but est de détruire les trois pièces de l'adversaire. J'étais dans un groupe de cinq, je devais développer et tester le jeu. En testant le jeu, j'ai appris beaucoup de choses sur la gestion d'un projet avec le rédaction d'un cahier des charges (qui décrit les fonctionnalités du jeu) et d'un cahier de test.</p>
-		<center><img id="project" src="images/exemple_vw.png" border="2"><br/>Exemple de Virtual War</center>
-		<h3>Life-Generator</h3>
-		<p>Après, au début de la deuxième année de DUT, je devais faire un projet avec la méthode Agile. Avec mon groupe, nous avons décidé de réaliser un créateur de personnages <strong>Life-Generator</strong>.</p>
-		<center><img id="project" src="images/exemple_life-generator.png" border="2"><br/>Visuel de Life-Generator</center>
-		<h3>Lexer et parser</h3>
-		<p>Enfin, pour mon stage de fin de diplôme, je devais réaliser <strong>un lexer et un parser</strong> dans Java. Si vous ne savez pas ce que c'est, en toute simplicité, c'est un traducteur informatique. Par exemple, on écrit A est grand, le traducteur comprend que "A" est un prénom, "est" est un verbe et "grand" est adjectif. Il garde comme information que A possède une qualité c'est qu'il est grand. Voilà, pour l'explication. Étant donné que je n'avais aucune connaissance sur le sujet, ce stage m'a appris à découvrir de nouveaux savoirs au-delà de mon apprentissage universitaire. De plus, j'ai appris à m'organiser grâce à ce projet.<br/> <a href="documents/final_report_internship_2015-2016.pdf">Voici le rapport de stage en anglais.</a></p>
-	</div>
-	<!-- Part 5 : Contact-->
-	<div class="my-menus" id="div5" style="display: none;">
-		<h2>Contact</h2>
-		<ul class="puces">
-			<li><h3>Portable ☎</h3></li>
-			<li><a href="tel:+33613242735">06.13.24.27.35</a></li>
-			<li><h3>E-mail ✉</h3></li>
-			<li><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></li>
-			<li><h3>Adresse</h3></li>
-			<li>6 route de Chavigny, Cuffies 02880</li>
-		</ul>
-	</div>
-	<div id ="footer">
-		I'm hosted with GitHub Pages.<br/>
-		Site réalisé par <FONT COLOR="paleturquoise">Maxime Pohle</FONT>.
+		<!-- Part 3 : Formation-->
+		<div class="my-menus" id="div3" style="display: none;">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2>Formation</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="puces nospace">
+						<li>2016 - 2017 : Licence Informatique à <strong>l'IUT Lille 1</strong></li>
+						<li>2016 : Stage à <strong>l'ISEC</strong> (Instituto Superior de Engenharia de Coimbra) au Portugal avec comme projet d'implémenter un lexer et un parser dans Java</li>
+						<li>2014 - 2016 : DUT Informatique à <strong>l'IUT Lille 1</strong></li>
+						<li>2014 : Baccalauréat S (Scientifique) Spécialité SVT (Sciences de la Vie et de la Terre) Mention Assez Bien au Lycée Gérard de Nerval Soissons (02)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Part 4 : Professional Experiences-->
+		<div class="my-menus" id="div4" style="display: none;">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2>Expériences</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>Au cours de mes trois années universitaires, j'ai réalisé plusieurs projets, seul ou en groupe.</p>
+					<h3>Edurace</h3>
+					<p>Tout d'abord, j'ai commencé par développer un jeu éducatif en binôme nommé <strong>Edurace</strong>. Edurace a pour objectif d'aider les enfants lors de l'apprentissage des savoirs de base (Mathématiques, Histoire...).  Ce projet a commencé par un brainstorming afin de déterminer quelle sera l'idée générale de ce jeu.</p>
+					<center><figure><img id="project" src="images/exemple_edurace.png" alt="Representation du projet Edurace"><figcaption>Exemple de Edurace</figcaption></figure></center>
+					<p>Le joueur doit répondre à plusieurs questions données par le programme sur le thème des mathématiques. Lorsqu'il choisit la bonne réponse, le joueur peut continuer le jeu par contre s'il choisit la mauvaise réponse, il perd et alors il devra recommencer la partie s'il veut continuer à jouer au jeu créé. Mais encore, le joueur peut diriger un vaisseau afin de choisir les bonnes réponses et esquiver des obstacles présent dans le jeu. Ce jeu possède alors une durée de vie illimitée car le jeu se finit dès que le joueur a faux. Il peut alors repérer son niveau grâce à un score et un tableau des scores.<br/>Grâce au projet que nous avons développé, nous avons été choisis par nos enseignants afin de pouvoir montrer le projet réalisé à des enfants.</p>
+					<h3>Virtual War</h3>
+					<p>Ensuite, il y a eu le projet <strong>Virtual War</strong>, un jeu de plateau où les deux joueurs ont trois pièces chacun et le but est de détruire les trois pièces de l'adversaire. J'étais dans un groupe de cinq, je devais développer et tester le jeu. En testant le jeu, j'ai appris beaucoup de choses sur la gestion d'un projet avec le rédaction d'un cahier des charges (qui décrit les fonctionnalités du jeu) et d'un cahier de test.</p>
+					<center><img id="project" src="images/exemple_vw.png" alt="Representation du projet Virtual War"><br/>Exemple de Virtual War</center>
+					<h3>Life-Generator</h3>
+					<p>Après, au début de la deuxième année de DUT, je devais faire un projet avec la méthode Agile. Avec mon groupe, nous avons décidé de réaliser un créateur de personnages <strong>Life-Generator</strong>.</p>
+					<center><img id="project" src="images/exemple_life-generator.png" alt="Image du projet Life-Generator"><br/>Visuel de Life-Generator</center>
+					<h3>Lexer et parser</h3>
+					<p>Enfin, pour mon stage de fin de diplôme, je devais réaliser <strong>un lexer et un parser</strong> dans Java. Si vous ne savez pas ce que c'est, en toute simplicité, c'est un traducteur informatique. Par exemple, on écrit A est grand, le traducteur comprend que "A" est un prénom, "est" est un verbe et "grand" est adjectif. Il garde comme information que A possède une qualité c'est qu'il est grand. Voilà, pour l'explication. Étant donné que je n'avais aucune connaissance sur le sujet, ce stage m'a appris à découvrir de nouveaux savoirs au-delà de mon apprentissage universitaire. De plus, j'ai appris à m'organiser grâce à ce projet.<br/> <a href="documents/final_report_internship_2015-2016.pdf">Voici le rapport de stage en anglais.</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- Part 5 : Contact-->
+		<div class="my-menus" id="div5" style="display: none;">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2>Contact</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="puces nospace">
+						<li><h3>Portable ☎</h3></li>
+						<li><a href="tel:+33613242735">06.13.24.27.35</a></li>
+						<li><h3>E-mail ✉</h3></li>
+						<li><a href="mailto:pohle.maxime@gmail.com">pohle.maxime@gmail.com</a></li>
+						<li><h3>Adresse</h3></li>
+						<li>6 route de Chavigny, Cuffies 02880</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			I'm hosted with GitHub Pages.<br/>
+			Site réalisé par <FONT COLOR="paleturquoise">Maxime Pohle</FONT>.
+		</footer>
 	</div>
 	<!-- Bootstrap core JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="bootstrap/js/jquery.min.js"><\/script>')</script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
-	<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+	<script>window.jQuery || document.write('<script src="bootstrap_v4.1.3/js/jquery.min.js"><\/script>')</script>
+	<script src="bootstrap_v4.1.3/js/bootstrap.min.js"></script>
 	<!-- My JavaScript file-->
 	<script src='functionsCV.js'></script>
 </body>
